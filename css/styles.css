@@ -97,7 +97,7 @@ img {
   letter-spacing: 0.02em; 
 }
 
-/* Header */
+/*========== Header ==========*/
 
 .header-logo {
   font-family: var(--secondary-font);  
@@ -145,7 +145,7 @@ img {
   color: currentColor;  
 }
 
-/* Hero */
+/*========== Hero ========== */
 
 .hero {  
   background-color: var(--header-bgd-cl);
@@ -183,18 +183,18 @@ img {
   background-color: var(--accent-btns-bgd-cl);
 }
 
-/* Feature */
+/*========== Feature ==========*/
 
 
-/* What are we doing */
+/*========== What are we doing ==========*/
 
 
-/* Our team */
+/*========== Our team ==========*/
 .team {
   background-color: var(--team-bgd-cl);
 }
 
-/* Footer */
+/*========== Footer ==========*/
 
 .footer {
   background-color: var(--footer-bgd-cl);
@@ -219,7 +219,7 @@ img {
   color: var(--footer-txt-cl);
 }
 
-/* Portfolio cards */
+/*========== Portfolio cards ==========*/
 
 .portfolio-btn {
   font-family: inherit;
