@@ -41,6 +41,20 @@
 
 /* Preset */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
 .hidden {
   display: none;
 }
@@ -51,6 +65,8 @@
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* General */
@@ -104,6 +120,7 @@
 
 .nav-list .link:hover,
 .nav-list .link:focus,
+.nav-list .link.current,
 .address-list .link:hover,
 .address-list .link:focus {
   color: var(--accent-link-txt-cl);  
