@@ -39,6 +39,26 @@
   background-color: var(--page-bgd-cl);
 }
 
+.section .title {  
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  letter-spacing: 0.02em;
+
+  text-transform: capitalize;
+  text-align: center;
+
+  color: var(--secondary-txt-cl);  
+}
+
+.section .subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-txt-cl);
+}
+
 /* Reset */
 
 .hidden {
@@ -140,26 +160,6 @@
 
 /* Feature */
 
-.feature-title {  
-  font-size: 36px;
-  line-height: calc(40 / 36);
-  letter-spacing: 0.02em;
-
-  text-transform: capitalize;
-  text-align: center;
-
-  color: var(--secondary-txt-cl);  
-}
-
-.feature-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: calc(24 / 20);
-  letter-spacing: 0.02em;
-
-  color: var(--secondary-txt-cl);
-}
-
 .feature-text {
   font-size: 16px;
   line-height: calc(24 / 16); 
@@ -168,38 +168,8 @@
 
 /* What are we doing */
 
-.works-title {
-  font-size: 36px;
-  line-height: calc(40 / 36);
-  letter-spacing: 0.02em;
-
-  text-transform: capitalize;
-  text-align: center;
-
-  color: var(--secondary-txt-cl);
-}
 
 /* Our team */
-
-.team-title {
-  font-size: 36px;
-  line-height: calc(40 / 36);
-  letter-spacing: 0.02em;
-
-  text-transform: capitalize;
-  text-align: center;
-
-  color: var(--secondary-txt-cl);
-}
-
-.team-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: calc(24 / 20);
-  letter-spacing: 0.02em;
-
-  color: var(--secondary-txt-cl)
-}
 
 .team-text {
   font-size: 16px;
@@ -238,17 +208,6 @@
 
 /* Portfolio cards */
 
-.portfolio-title {
-  font-size: 36px;
-  line-height: calc(40 / 36); 
-  letter-spacing: 0.02em;
-
-  text-transform: capitalize;
-  text-align: center;
-
-  color: var(--secondary-txt-cl);
-}
-
 .portfolio-btn {
   font-family: inherit;
   font-weight: 500;
@@ -269,15 +228,6 @@
 .portfolio-btn:focus {
   color: var(--accent-btns-portfolio-txt-cl);
   background-color: var(--accent-btns-bgd-cl);
-}
-
-.portfolio-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: calc(24 / 20);
-  letter-spacing: 0.02em;
-
-  color: var(--secondary-txt-cl);
 }
 
 .portfolio-text {  
