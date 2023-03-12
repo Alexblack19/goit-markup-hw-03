@@ -91,6 +91,12 @@ img {
   color: var(--secondary-txt-cl);
 }
 
+.text {
+  font-size: 16px;
+  line-height: calc(24 / 16); 
+  letter-spacing: 0.02em; 
+}
+
 /* Header */
 
 .header-logo {
@@ -179,22 +185,12 @@ img {
 
 /* Feature */
 
-.feature-text {
-  font-size: 16px;
-  line-height: calc(24 / 16); 
-  letter-spacing: 0.02em; 
-}
 
 /* What are we doing */
 
 
 /* Our team */
 
-.team-text {
-  font-size: 16px;
-  line-height: calc(24 / 16);
-  letter-spacing: 0.02em;
-}
 
 /* Footer */
 
@@ -218,10 +214,6 @@ img {
 }
 
 .footer-text {
-  font-size: 16px;
-  line-height: calc(24 / 16);
-  letter-spacing: 0.02em;
-
   color: var(--footer-txt-cl);
 }
 
@@ -249,10 +241,6 @@ img {
   background-color: var(--accent-btns-bgd-cl);
 }
 
-.portfolio-text {  
-  font-size: 16px;
-  line-height: calc(24 / 16);
-  letter-spacing: 0.02em;
-
+.portfolio-text {    
   color: var(--primary-txt-cl);
 }
