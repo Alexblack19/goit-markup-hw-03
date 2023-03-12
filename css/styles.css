@@ -190,7 +190,9 @@ img {
 
 
 /* Our team */
-
+.team {
+  background-color: var(--team-bgd-cl);
+}
 
 /* Footer */
 
