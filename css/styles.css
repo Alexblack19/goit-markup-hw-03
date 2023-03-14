@@ -156,9 +156,9 @@ img {
   line-height: calc(60 / 56);   
   letter-spacing: 0.02em; 
 
-  color: var(--hero-txt-cl);
-
   text-align: center;
+
+  color: var(--hero-txt-cl);  
 }
 
 .hero-btn {
