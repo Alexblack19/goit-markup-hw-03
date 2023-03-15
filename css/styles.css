@@ -42,7 +42,7 @@
   background-color: var(--page-bgd-cl);
 }
 
-/* === Preset === */
+/* === Reset === */
 
 h1,
 h2,
@@ -239,7 +239,7 @@ img {
 /*========== Portfolio cards ==========*/
 
 .portfolio-btn {
-  padding: 12px 24px;
+  padding: 11px 23px;
 
   font-family: inherit;
   letter-spacing: 0.04em;
