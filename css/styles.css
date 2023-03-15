@@ -4,38 +4,41 @@
   --secondary-font: 'Raleway', sans-serif;
 
   /* Logo txt colors */
-  --primary-logo-cl: #4D5AE5;
-  --secondary-logo-cl: #2E2F42;
-  --footer-studio-cl: #F4F4FD;
+  --primary-logo-cl: #4d5ae5;
+  --secondary-logo-cl: #2e2f42;
+  --footer-studio-cl: #f4f4fd;
 
   /* Text colors */
   --primary-txt-cl: #434455;
-  --secondary-txt-cl: #2E2F42;
-  --hero-txt-cl: #FFFFFF;    
-  --footer-txt-cl: #F4F4FD;
-  --accent-link-txt-cl: #404BBF;  
+  --secondary-txt-cl: #2e2f42;
+  --hero-txt-cl: #ffffff;
+  --footer-txt-cl: #f4f4fd;
+  --accent-link-txt-cl: #404bbf;
 
   /* Background colors */
-  --page-bgd-cl: #FFFFFF;  
-  --header-bgd-cl: #2E2F42;
-  --team-bgd-cl: #F4F4FD;
-  --footer-bgd-cl: #2E2F42;
+  --page-bgd-cl: #ffffff;
+  --header-bgd-cl: #2e2f42;
+  --team-bgd-cl: #f4f4fd;
+  --footer-bgd-cl: #2e2f42;
 
   /* Buttons text colors */
-  --btn-hero-txt-cl: #FFFFFF;   
-  --btns-portfolio-txt-cl: #4D5AE5;
-  --accent-btns-portfolio-txt-cl: #FFFFFF; 
-  
+  --btn-hero-txt-cl: #ffffff;
+  --btns-portfolio-txt-cl: #4d5ae5;
+  --accent-btns-portfolio-txt-cl: #ffffff;
+
   /* Buttons background colors */
-  --btn-hero-bgd-cl: #4D5AE5;  
-  --btns-portfolio-bgd-cl: #F4F4FD;
-  --accent-btns-bgd-cl: #404BBF;  
+  --btn-hero-bgd-cl: #4d5ae5;
+  --btns-portfolio-bgd-cl: #f4f4fd;
+  --accent-btns-bgd-cl: #404bbf;
+
+  /* Buttons border colors */
+  --btns-portfolio-border-cl: #E7E9FC;
 }
 
 .page {
   font-family: var(--primary-font);
-  
-  color: var(--primary-txt-cl);  
+
+  color: var(--primary-txt-cl);
   background-color: var(--page-bgd-cl);
 }
 
@@ -71,13 +74,20 @@ img {
 
 /* === General === */
 
-.btn {
+.container {
+  width: 1158px;
+  padding: 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn { 
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24 / 16);
 }
 
-.section .title {  
+.section .title {
   font-size: 36px;
   line-height: calc(40 / 36);
   letter-spacing: 0.02em;
@@ -85,7 +95,7 @@ img {
   text-transform: capitalize;
   text-align: center;
 
-  color: var(--secondary-txt-cl);  
+  color: var(--secondary-txt-cl);
 }
 
 .section .subtitle {
@@ -99,17 +109,17 @@ img {
 
 .text {
   font-size: 16px;
-  line-height: calc(24 / 16); 
-  letter-spacing: 0.02em; 
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
 }
 
 /*========== Header ==========*/
 
 .header-logo {
-  font-family: var(--secondary-font);  
+  font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
-  line-height: calc(21 / 18);  
+  line-height: calc(21 / 18);
   letter-spacing: 0.03em;
 
   text-transform: uppercase;
@@ -121,11 +131,11 @@ img {
   color: var(--secondary-logo-cl);
 }
 
-.nav-link {  
+.nav-link {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24 / 16);
-  letter-spacing: 0.02em;  
+  letter-spacing: 0.02em;
 
   color: var(--secondary-txt-cl);
 }
@@ -135,40 +145,45 @@ img {
 .nav-list .link.current,
 .address-list .link:hover,
 .address-list .link:focus {
-  color: var(--accent-link-txt-cl);  
+  color: var(--accent-link-txt-cl);
 }
 
 .address {
   font-style: normal;
 }
 
-.address-link {  
+.address-link {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
 
-  color: currentColor;  
+  color: currentColor;
 }
 
 /*========== Hero ========== */
 
-.hero {  
+.hero {
   background-color: var(--header-bgd-cl);
 }
 
-.hero-title {  
+.hero-title {
+  width: 496px;
+
   font-size: 56px;
-  line-height: calc(60 / 56);   
-  letter-spacing: 0.02em; 
+  line-height: calc(60 / 56);
+  letter-spacing: 0.02em;
 
   text-align: center;
 
-  color: var(--hero-txt-cl);  
+  color: var(--hero-txt-cl);
 }
 
 .hero-btn {
-  font-family: inherit;  
+  padding: 16px 32px;
+  min-width: 169px;
+
+  font-family: inherit;
   letter-spacing: 0.04em;
 
   color: var(--btn-hero-txt-cl);
@@ -199,7 +214,7 @@ img {
 /*========== Footer ==========*/
 
 .footer-logo {
-  font-family: var(--secondary-font);  
+  font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
   line-height: calc(21 / 18);
@@ -224,7 +239,9 @@ img {
 /*========== Portfolio cards ==========*/
 
 .portfolio-btn {
-  font-family: inherit;  
+  padding: 12px 24px;
+
+  font-family: inherit;
   letter-spacing: 0.04em;
 
   color: var(--btns-portfolio-txt-cl);
@@ -232,7 +249,7 @@ img {
 
   cursor: pointer;
 
-  border: 1px solid #E7E9FC;
+  border: 1px solid var(--btns-portfolio-border-cl);
   border-radius: 4px;
 }
 
@@ -242,6 +259,6 @@ img {
   background-color: var(--accent-btns-bgd-cl);
 }
 
-.portfolio-text {    
+.portfolio-text {
   color: var(--primary-txt-cl);
 }
