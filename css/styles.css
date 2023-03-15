@@ -168,6 +168,8 @@ img {
 }
 
 .hero-title {
+  padding-top: 188px;;
+  margin-bottom: 48px;
   width: 496px;
 
   font-size: 56px;
@@ -182,6 +184,7 @@ img {
 .hero-btn {
   padding: 16px 32px;
   min-width: 169px;
+  margin-bottom: 188px;
 
   font-family: inherit;
   letter-spacing: 0.04em;
@@ -203,12 +206,21 @@ img {
 
 /*========== Feature ==========*/
 
+.feature-subtitle {  
+  margin-bottom: 8px;
+}
+
 /*========== What are we doing ==========*/
 
 /*========== Our team ==========*/
 
 .team {
   background-color: var(--team-bgd-cl);
+}
+
+.team-subtitle {
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 /*========== Footer ==========*/
@@ -257,6 +269,11 @@ img {
 .portfolio-btn:focus {
   color: var(--accent-btns-portfolio-txt-cl);
   background-color: var(--accent-btns-bgd-cl);
+}
+
+.portfolio-subtitle {
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
