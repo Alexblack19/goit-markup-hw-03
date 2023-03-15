@@ -1,37 +1,37 @@
 :root {
-  /* Fonts */
+  /** Fonts */
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
 
-  /* Logo txt colors */
+  /** Logo txt colors */
   --primary-logo-cl: #4d5ae5;
   --secondary-logo-cl: #2e2f42;
   --footer-studio-cl: #f4f4fd;
 
-  /* Text colors */
+  /** Text colors */
   --primary-txt-cl: #434455;
   --secondary-txt-cl: #2e2f42;
   --hero-txt-cl: #ffffff;
   --footer-txt-cl: #f4f4fd;
   --accent-link-txt-cl: #404bbf;
 
-  /* Background colors */
+  /** Background colors */
   --page-bgd-cl: #ffffff;
   --header-bgd-cl: #2e2f42;
   --team-bgd-cl: #f4f4fd;
   --footer-bgd-cl: #2e2f42;
 
-  /* Buttons text colors */
+  /** Buttons text colors */
   --btn-hero-txt-cl: #ffffff;
   --btns-portfolio-txt-cl: #4d5ae5;
   --accent-btns-portfolio-txt-cl: #ffffff;
 
-  /* Buttons background colors */
+  /** Buttons background colors */
   --btn-hero-bgd-cl: #4d5ae5;
   --btns-portfolio-bgd-cl: #f4f4fd;
   --accent-btns-bgd-cl: #404bbf;
 
-  /* Buttons border colors */
+  /*** Buttons border colors */
   --btns-portfolio-border-cl: #E7E9FC;
 }
 
@@ -42,7 +42,7 @@
   background-color: var(--page-bgd-cl);
 }
 
-/* === Reset === */
+/** === Reset === */
 
 h1,
 h2,
@@ -72,7 +72,7 @@ img {
   margin: 0;
 }
 
-/* === General === */
+/** === General === */
 
 .container {
   width: 1158px;
@@ -113,7 +113,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-/*========== Header ==========*/
+/**========== Header ==========*/
 
 .header-logo {
   font-family: var(--secondary-font);
@@ -161,14 +161,14 @@ img {
   color: currentColor;
 }
 
-/*========== Hero ========== */
+/**========== Hero ========== */
 
 .hero {
   background-color: var(--header-bgd-cl);
 }
 
-.hero-title {
-  padding-top: 188px;;
+.hero-title {   
+  padding-top: 188px;
   margin-bottom: 48px;
   width: 496px;
 
@@ -204,15 +204,15 @@ img {
   background-color: var(--accent-btns-bgd-cl);
 }
 
-/*========== Feature ==========*/
+/**========== Feature ==========*/
 
 .feature-subtitle {  
   margin-bottom: 8px;
 }
 
-/*========== What are we doing ==========*/
+/**========== What are we doing ==========*/
 
-/*========== Our team ==========*/
+/**========== Our team ==========*/
 
 .team {
   background-color: var(--team-bgd-cl);
@@ -223,14 +223,19 @@ img {
   margin-bottom: 8px;
 }
 
-/*========== Footer ==========*/
+/**========== Footer ==========*/
 
 .footer-logo {
+  display: inline-block;
+  margin-top: 100px;
+  margin-bottom: 16px;
+
   font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
   line-height: calc(21 / 18);
   letter-spacing: 0.03em;
+
   text-transform: uppercase;
 
   color: var(--primary-logo-cl);
@@ -241,6 +246,9 @@ img {
 }
 
 .footer-text {
+  padding-bottom: 100px;
+  width: 264px;
+
   color: var(--footer-txt-cl);
 }
 
@@ -248,7 +256,7 @@ img {
   background-color: var(--footer-bgd-cl);
 }
 
-/*========== Portfolio cards ==========*/
+/**========== Portfolio cards ==========*/
 
 .portfolio-btn {
   padding: 11px 23px;
