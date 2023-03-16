@@ -31,9 +31,12 @@
   --btns-portfolio-bgd-cl: #f4f4fd;
   --accent-btns-bgd-cl: #404bbf;
 
-  /** Buttons border colors */
+  /** Buttons border color */
   --btns-portfolio-border-cl: #E7E9FC;
-}
+
+  /** Header line color */
+  --header-line-cl: #E7E9FC;
+}  
 
 .page {
   font-family: var(--primary-font);
@@ -84,12 +87,17 @@ img {
 
 /** === General === */
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .container {
   width: 1128px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;  
 }
 
 .btn { 
@@ -126,9 +134,11 @@ img {
 
 /**========== Header ==========*/
 
-.header >.container {
+.header {
   padding-top: 24px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid var(--header-line-cl);
 }
 
 .header-logo {
@@ -179,12 +189,10 @@ img {
 
 /**========== Hero ========== */
 
-.hero >.container {
-  padding-top: 188px;
-  padding-bottom: 188px;
-}
-
 .hero {  
+  padding-top: 188px;
+  padding-bottom: 188px;  
+
   text-align: center;
 
   background-color: var(--header-bgd-cl);
@@ -195,7 +203,6 @@ img {
   margin-right: auto;
   margin-left: auto;
   max-width: 496px;  
-
 
   font-size: 56px;
   line-height: calc(60 / 56);
@@ -229,19 +236,15 @@ img {
 
 /**========== Feature ==========*/
 
-.feature >.container {
-  padding-top: 120px;
-  padding-bottom: 60px;
-}  
-
 .feature-subtitle {  
   margin-bottom: 8px;
 }
 
 /**========== What are we doing ==========*/
-.works >.container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+
+.works {
+  padding-top: 0px;
+
 }
 
 .works-title {
@@ -250,13 +253,12 @@ img {
 
 /**========== Our team ==========*/
 
-.team> .container {
-  padding-top: 60px;
-  padding-bottom: 120px;    
+.team {  
+  background-color: var(--team-bgd-cl);  
 }
 
-.team {
-  background-color: var(--team-bgd-cl);
+.team-title {
+  margin-bottom: 72px;
 }
 
 .team-subtitle {
@@ -266,7 +268,7 @@ img {
 
 /**========== Footer ==========*/
 
-.footer >.container {
+.footer {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -302,9 +304,8 @@ img {
 
 /**========== Portfolio cards ==========*/
 
-.portfolio >.container {
-  padding-top: 96px;
-  padding-bottom: 120px;
+.portfolio {
+  padding-top: 96px;  
 }
 
 .portfolio-buttons {
