@@ -54,25 +54,27 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul,
+ol {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
 }
 
 img {
   display: block;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+address {
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
 }
 
 .link {
@@ -80,9 +82,7 @@ img {
 }
 
 .list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  list-style: none;  
 }
 
 /** === General === */
@@ -97,7 +97,21 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;    
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .btn { 
@@ -174,10 +188,6 @@ img {
   color: var(--accent-link-txt-cl);
 }
 
-.address {
-  font-style: normal;
-}
-
 .address-link {
   font-weight: 400;
   font-size: 16px;
@@ -221,8 +231,6 @@ img {
 
   color: var(--btn-hero-txt-cl);
   background-color: var(--btn-hero-bgd-cl);
-
-  cursor: pointer;
 
   border: 0px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -320,8 +328,6 @@ img {
 
   color: var(--btns-portfolio-txt-cl);
   background-color: var(--btns-portfolio-bgd-cl);
-
-  cursor: pointer;
 
   border: 1px solid var(--btns-portfolio-border-cl);
   border-radius: 4px;
