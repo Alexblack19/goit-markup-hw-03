@@ -126,6 +126,11 @@ img {
 
 /**========== Header ==========*/
 
+.header >.container {
+  padding-top: 24px;
+  padding-bottom: 23px;
+}
+
 .header-logo {
   font-family: var(--secondary-font);
   font-weight: 800;
@@ -241,8 +246,10 @@ img {
 
 .team> .container {
   padding-top: 60px;
-  padding-bottom: 120px;  
+  padding-bottom: 120px;    
+}
 
+.team {
   background-color: var(--team-bgd-cl);
 }
 
@@ -291,7 +298,7 @@ img {
 
 .portfolio >.container {
   padding-top: 96px;
-  padding-bottom: 1
+  padding-bottom: 120px;
 }
 
 .portfolio-buttons {
