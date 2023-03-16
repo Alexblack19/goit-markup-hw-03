@@ -86,7 +86,8 @@ img {
 
 .container {
   width: 1158px;
-  padding: 0px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -173,6 +174,11 @@ img {
 
 /**========== Hero ========== */
 
+.hero >.container {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
 .hero {
   background-color: var(--header-bgd-cl);
 }
@@ -212,8 +218,9 @@ img {
 
 /**========== Feature ==========*/
 
-.feature.section {
-  padding: 120px 0px 60px;
+.feature >.container {
+  padding-top: 120px;
+  padding-bottom: 60px;
 }  
 
 .feature-subtitle {  
@@ -221,8 +228,9 @@ img {
 }
 
 /**========== What are we doing ==========*/
-.works.section {
-  padding: 60px 0px;
+.works >.container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .works-title {
@@ -231,8 +239,9 @@ img {
 
 /**========== Our team ==========*/
 
-.team.section {
-  padding: 60px 0px 120px;  
+.team> .container {
+  padding-top: 60px;
+  padding-bottom: 120px;  
 
   background-color: var(--team-bgd-cl);
 }
@@ -244,9 +253,13 @@ img {
 
 /**========== Footer ==========*/
 
+.footer >.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .footer-logo {
-  display: inline-block;
-  margin-top: 100px;
+  display: inline-block;  
   margin-bottom: 16px;
 
   font-family: var(--secondary-font);
@@ -264,8 +277,7 @@ img {
   color: var(--footer-studio-cl);
 }
 
-.footer-text {
-  padding-bottom: 100px;
+.footer-text {  
   width: 264px;
 
   color: var(--footer-txt-cl);
@@ -277,7 +289,16 @@ img {
 
 /**========== Portfolio cards ==========*/
 
-.portfolio-btn {
+.portfolio >.container {
+  padding-top: 96px;
+  padding-bottom: 1
+}
+
+.portfolio-buttons {
+  margin-bottom: 72px;    
+}
+
+.portfolio-btn {  
   padding: 11px 23px;
 
   font-family: inherit;
