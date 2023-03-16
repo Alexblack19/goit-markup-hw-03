@@ -58,8 +58,18 @@ img {
   display: block;
 }
 
-.hidden {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .link {
@@ -167,9 +177,7 @@ img {
   background-color: var(--header-bgd-cl);
 }
 
-.hero-title {   
-  padding-top: 188px;
-  margin-bottom: 48px;
+.hero-title {     
   width: 496px;
 
   font-size: 56px;
@@ -181,11 +189,9 @@ img {
   color: var(--hero-txt-cl);
 }
 
-.hero-btn {
-  padding: 16px 32px;
+.hero-btn {  
   min-width: 169px;
-  margin-bottom: 188px;
-
+  
   font-family: inherit;
   letter-spacing: 0.04em;
 
@@ -206,15 +212,28 @@ img {
 
 /**========== Feature ==========*/
 
+.feature.section {
+  padding: 120px 0px 60px;
+}  
+
 .feature-subtitle {  
   margin-bottom: 8px;
 }
 
 /**========== What are we doing ==========*/
+.works.section {
+  padding: 60px 0px;
+}
+
+.works-title {
+  margin-bottom: 72px;
+}
 
 /**========== Our team ==========*/
 
-.team {
+.team.section {
+  padding: 60px 0px 120px;  
+
   background-color: var(--team-bgd-cl);
 }
 
