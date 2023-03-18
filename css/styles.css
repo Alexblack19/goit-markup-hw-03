@@ -163,6 +163,10 @@ button {
   display: flex;     
 }
 
+.address-item:first-child {
+  margin-right: 40px;
+}
+
 .site-nav {
   align-items: center;
 }
