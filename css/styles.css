@@ -154,6 +154,7 @@ button {
 
 .header > .container {
   display: flex;
+  justify-content: space-between;
 }
 
 .site-nav,
@@ -173,20 +174,6 @@ button {
 .nav-item:not(:last-child) {
   margin-right: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .header {
   padding-top: 24px;
