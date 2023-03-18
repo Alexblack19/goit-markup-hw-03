@@ -316,7 +316,10 @@ button {
 
 .team-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  column-gap: 24px;
+  /* justify-content: space-between; */
 }
 
 .team-item {
