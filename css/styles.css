@@ -19,6 +19,7 @@
   --page-bgd-cl: #ffffff;
   --header-bgd-cl: #2e2f42;
   --team-bgd-cl: #f4f4fd;
+  --cards-bgd-cl: #ffffff;
   --footer-bgd-cl: #2e2f42;
 
   /** Buttons text colors */
@@ -32,11 +33,14 @@
   --accent-btns-bgd-cl: #404bbf;
 
   /** Buttons border color */
-  --btns-portfolio-border-cl: #E7E9FC;
+  --btns-portfolio-border-cl: #e7e9fc;
 
   /** Header line color */
-  --header-line-cl: #E7E9FC;
-}  
+  --header-line-cl: #e7e9fc;
+
+  /** Portfolio cards border color */
+  --portfolio-cards-border-cl: #E7E9FC;
+}
 
 .page {
   font-family: var(--primary-font);
@@ -82,7 +86,7 @@ button {
 }
 
 .list {
-  list-style: none;  
+  list-style: none;
 }
 
 /** === General === */
@@ -92,12 +96,12 @@ button {
   padding-bottom: 120px;
 }
 
-.container { 
+.container {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
-  margin-right: auto;    
+  margin-right: auto;
 }
 
 .visually-hidden {
@@ -107,14 +111,14 @@ button {
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-.btn { 
+.btn {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24 / 16);
@@ -148,6 +152,39 @@ button {
 
 /**========== Header ==========*/
 
+.header > .container {
+  display: flex;  
+  align-items: center;
+}
+
+.site-nav,
+.nav-list,
+.address-list {
+  display: flex;  
+}
+
+.nav-list {    
+  margin-left: 76px;  
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -160,7 +197,7 @@ button {
   font-weight: 800;
   font-size: 18px;
   line-height: calc(21 / 18);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03em;  
 
   text-transform: uppercase;
 
@@ -199,23 +236,23 @@ button {
 
 /**========== Hero ========== */
 
-.hero {  
+.hero {
   padding-top: 188px;
-  padding-bottom: 188px;  
+  padding-bottom: 188px;
 
   background-color: var(--header-bgd-cl);
 }
 
-.hero-title { 
-  margin-bottom: 48px;  
+.hero-title {
+  margin-bottom: 48px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 496px;  
+  max-width: 496px;
 
   font-size: 56px;
   line-height: calc(60 / 56);
   letter-spacing: 0.02em;
-  text-align: center;    
+  text-align: center;
 
   color: var(--hero-txt-cl);
 }
@@ -224,13 +261,13 @@ button {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding: 16px 32px;  
+  padding: 16px 32px;
   min-width: 169px;
-  
-  font-family: inherit;
-  letter-spacing: 0.04em;  
 
-  color: var(--btn-hero-txt-cl);
+  font-family: inherit;
+  letter-spacing: 0.04em;
+
+  color: var(--btn-hero-txt-cl);  
   background-color: var(--btn-hero-bgd-cl);
 
   border: 0px;
@@ -245,7 +282,16 @@ button {
 
 /**========== Feature ==========*/
 
-.feature-subtitle {  
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-item {
+  width: 264px;
+}
+
+.feature-subtitle {
   margin-bottom: 8px;
 }
 
@@ -255,14 +301,34 @@ button {
   padding-top: 0px;
 }
 
+.works-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .works-title {
   margin-bottom: 72px;
 }
 
 /**========== Our team ==========*/
 
-.team {  
-  background-color: var(--team-bgd-cl);  
+.team {
+  background-color: var(--team-bgd-cl);
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-item {
+  padding-bottom: 32px;
+
+  background-color: var(--cards-bgd-cl);
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -272,6 +338,12 @@ button {
 .team-subtitle {
   margin-top: 32px;
   margin-bottom: 8px;
+
+  text-align: center;
+}
+
+.team-text {
+  text-align: center;
 }
 
 /**========== Footer ==========*/
@@ -282,7 +354,7 @@ button {
 }
 
 .footer-logo {
-  display: inline-block;  
+  display: inline-block;
   margin-bottom: 16px;
 
   font-family: var(--secondary-font);
@@ -300,7 +372,7 @@ button {
   color: var(--footer-studio-cl);
 }
 
-.footer-text {  
+.footer-text {
   width: 264px;
 
   color: var(--footer-txt-cl);
@@ -313,14 +385,21 @@ button {
 /**========== Portfolio cards ==========*/
 
 .portfolio {
-  padding-top: 96px;  
+  padding-top: 96px;
 }
 
 .portfolio-buttons {
-  margin-bottom: 72px;    
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 72px;
 }
 
-.portfolio-btn {  
+.portfolio-buttons > .item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.portfolio-btn { 
   padding: 11px 23px;
 
   font-family: inherit;
@@ -339,11 +418,29 @@ button {
   background-color: var(--accent-btns-bgd-cl);
 }
 
-.portfolio-subtitle {
-  margin-top: 32px;
-  margin-bottom: 8px;
+.portfolio-subtitle {  
+  margin-bottom: 8px;  
 }
 
-.portfolio-text {
+.portfolio-text { 
   color: var(--primary-txt-cl);
+}
+
+.portfolio-cards > .item {
+  background-color: var(--cards-bgd-cl);
+  
+}
+
+.text-card {
+  padding: 32px 16px;
+  border-right: 1px solid var(--portfolio-cards-border-cl);
+  border-bottom: 1px solid var(--portfolio-cards-border-cl);
+  border-left: 1px solid var(--portfolio-cards-border-cl);
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
