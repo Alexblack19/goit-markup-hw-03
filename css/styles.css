@@ -153,21 +153,21 @@ button {
 
 .header > .container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-.site-nav,
-.nav-list,
-.address-list {
-  display: flex;     
-}
-
-.address-item:first-child {
-  margin-right: 40px;
-}
-
 .site-nav {
-  align-items: center;
+  display: flex;
+  align-items: center;  
+}
+
+.nav-list {
+  display: flex;
+}
+
+.address-list {
+  display: flex;
 }
 
 .nav-list {    
@@ -175,6 +175,10 @@ button {
 }
 
 .nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.address-item:first-child {
   margin-right: 40px;
 }
 
@@ -388,6 +392,13 @@ button {
   margin-bottom: 72px;
 }
 
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
 .portfolio-buttons > .item:not(:last-child) {
   margin-right: 24px;
 }
@@ -429,11 +440,4 @@ button {
   border-right: 1px solid var(--portfolio-cards-border-cl);
   border-bottom: 1px solid var(--portfolio-cards-border-cl);
   border-left: 1px solid var(--portfolio-cards-border-cl);
-}
-
-.portfolio-cards {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
 }
