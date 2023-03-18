@@ -164,14 +164,16 @@ button {
 
 .nav-list {
   display: flex;
+  align-items: center;
 }
 
 .address-list {
   display: flex;
+  align-items: center;
 }
 
-.nav-list {    
-  margin-left: 76px;  
+.header-logo {
+  margin-right: 76px;
 }
 
 .nav-item:not(:last-child) {
