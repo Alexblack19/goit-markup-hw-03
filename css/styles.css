@@ -154,7 +154,7 @@ button {
 .header > .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .site-nav {
@@ -169,7 +169,7 @@ button {
 
 .address-list {
   display: flex;
-  align-items: center;
+  align-items: center;  
 }
 
 .header-logo {
@@ -178,6 +178,10 @@ button {
 
 .nav-item:not(:last-child) {
   margin-right: 40px;
+}
+
+.address {
+  margin-left: auto;
 }
 
 .address-item:first-child {
