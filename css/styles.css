@@ -153,14 +153,17 @@ button {
 /**========== Header ==========*/
 
 .header > .container {
-  display: flex;  
-  align-items: center;
+  display: flex;
 }
 
 .site-nav,
 .nav-list,
 .address-list {
-  display: flex;  
+  display: flex;     
+}
+
+.site-nav {
+  align-items: center;
 }
 
 .nav-list {    
@@ -197,7 +200,7 @@ button {
   font-weight: 800;
   font-size: 18px;
   line-height: calc(21 / 18);
-  letter-spacing: 0.03em;  
+  letter-spacing: 0.03em;    
 
   text-transform: uppercase;
 
