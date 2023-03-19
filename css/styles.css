@@ -18,8 +18,7 @@
   /** Background colors */
   --page-bgd-cl: #ffffff;
   --header-bgd-cl: #2e2f42;
-  --team-bgd-cl: #f4f4fd;
-  --cards-bgd-cl: #ffffff;
+  --team-bgd-cl: #f4f4fd;  
   --footer-bgd-cl: #2e2f42;
 
   /** Buttons text colors */
@@ -38,7 +37,8 @@
   /** Header line color */
   --header-line-cl: #e7e9fc;
 
-  /** Portfolio cards border color */
+  /** Portfolio cards */
+  --cards-bgd-cl: #ffffff;
   --portfolio-cards-border-cl: #E7E9FC;
 }
 
