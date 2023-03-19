@@ -69,7 +69,10 @@ ul {
 }
 
 img {
-  display: block;  
+  display: block; 
+  
+  max-width: 100%;
+  height: auto;
 }
 
 address {
@@ -441,7 +444,7 @@ button {
 
 .portfolio-cards > .item {
   flex-basis: calc((100% - 48px) / 3);
-
+  
   background-color: var(--cards-bgd-cl);  
 }
 
