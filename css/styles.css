@@ -165,8 +165,7 @@ button {
 
 .nav-list {
   display: flex;
-  align-items: center;
-  gap: 40px;
+  align-items: center;  
 }
 
 .address-list {
@@ -178,9 +177,9 @@ button {
   margin-right: 76px;
 }
 
-/* .nav-item:not(:last-child) {
+.nav-item:not(:last-child) {
   margin-right: 40px;
-} */
+}
 
 .address-item:first-child {
   margin-right: 40px;
