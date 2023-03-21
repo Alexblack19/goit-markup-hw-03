@@ -185,7 +185,7 @@ button {
   margin-right: 40px;
 }
 
-.address-item:first-child {
+.address-item:not(:last-child) {
   margin-right: 40px;
 }
 
