@@ -158,8 +158,7 @@ button {
 
 .header > .container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center;  
 }
 
 .site-nav {
@@ -170,6 +169,10 @@ button {
 .nav-list {
   display: flex;
   align-items: center;  
+}
+
+.address {
+  margin-left: auto;
 }
 
 .address-list {
