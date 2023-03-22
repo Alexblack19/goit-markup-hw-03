@@ -166,30 +166,19 @@ button {
   align-items: center;  
 }
 
-.nav-list {
+.nav-list,
+.address-list {
   display: flex;
-  align-items: center;  
+  align-items: center;
+  gap: 40px;
 }
 
 .address {
   margin-left: auto;
 }
 
-.address-list {
-  display: flex;
-  align-items: center;  
-}
-
 .header-logo {
   margin-right: 76px;
-}
-
-.nav-item:not(:last-child) {
-  margin-right: 40px;
-}
-
-.address-item:not(:last-child) {
-  margin-right: 40px;
 }
 
 .header {
