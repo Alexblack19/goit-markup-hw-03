@@ -287,12 +287,12 @@ button {
 /**========== Feature ==========*/
 
 .feature-list {
-  display: flex;
-  justify-content: space-between;
+  display: flex;  
+  gap: 24px;
 }
 
 .feature-item {
-  width: 264px;
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .feature-subtitle {
