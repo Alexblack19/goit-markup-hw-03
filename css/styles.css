@@ -185,9 +185,16 @@ button {
   margin-right: 76px;
 }
 
-.header {
+.nav-link,
+.address-link {
+  display: inline-block;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.header {
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
    
   border-bottom: 1px solid var(--header-line-cl);
 }
